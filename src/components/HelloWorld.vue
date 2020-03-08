@@ -26,8 +26,8 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Login"
-                    name="login"
+                    label="Insert username of github"
+                    name="username"
                     prepend-icon="person"
                     type="text"
                     :rules="rules"
