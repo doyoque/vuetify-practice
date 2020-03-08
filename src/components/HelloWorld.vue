@@ -36,7 +36,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer />
-                <v-btn color="primary">Login</v-btn>
+                <v-btn color="primary" @click="getRepos()">Search</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -48,6 +48,7 @@
 
 <script>
   export default {
+    name: 'HelloWorld',
     props: {
       source: String,
     },
@@ -60,6 +61,11 @@
           return pattern.test(value) || 'Invalid input'
         }
       ]
-    })
+    }),
+    methods: {
+      getRepos() {
+        this.$router.push('/repos')
+      }
+    }
   }
 </script>

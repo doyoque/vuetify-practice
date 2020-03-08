@@ -1,14 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
+import ListRepos from '../components/ListRepos.vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'HelloWorld',
+    component: HelloWorld
+  },
+  {
+    path: '/repos',
+    name: 'ListRepos',
+    component: ListRepos
   },
   {
     path: '/about',
